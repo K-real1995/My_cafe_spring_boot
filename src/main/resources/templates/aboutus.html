@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>About Us</h1>
+<nav>
+  <ul>
+    <li><a href="/coffee">Our Coffee</a></li>
+    <li><a href="/">Our Cafe</a></li>
+    <li><a href="/tea">Our Tea</a></li>
+    <li><a href="/about-us">About Us</a></li>
+  </ul>
+</nav>
+</header>
+<main>
+  <img src='https://images.unsplash.com/photo-1515560570411-00a0026e6086?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+  <h1>About Us</h1>
+  <p>We are one of the highest quality coffee shops in Champaign, Illinois. Come Visit!</p>
+
+  <h2>Hours of Operation</h2>
+  <table class='styled'>
+    <tr>
+    <tr>
+      <th>Day</th>
+      <th>Hours</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>6AM to 7PM</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>6AM to 7PM</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>9AM to 5PM</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>6AM to 7PM</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>6AM to 7PM</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>6AM to 10PM</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>6AM to 10PM</td>
+    </tr>
+  </table>
+
+  <h2>Menu</h2>
+  <table class='styled'>
+    <tr>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Vanilla Latte</td>
+      <td>$4</td>
+    </tr>
+    <tr>
+      <td>Black Coffee</td>
+      <td>$2</td>
+    </tr>
+    <tr>
+      <td>Hot Chocolate</td>
+      <td>$2.50</td>
+    </tr>
+    <tr>
+      <td>Double Esspresso</td>
+      <td>$5</td>
+    </tr>
+    <tr>
+      <td>Chai Latte</td>
+      <td>$4</td>
+    </tr>
+  </table>
+
+  <h2>Sign Up For Our Newsletter!</h2>
+
+    <form method="post" action="/about-us" th:object="${registerRequest}" class="form">
+      <input type="text" name="name" class="input" placeholder="Name" required>
+      <input type="email" name="email" class="input" placeholder="E-mail" required>
+      <input type="text" name="feedback" class="input" placeholder="Feedback" required>
+      <div class="container">
+        <input type="radio" id="1 Star" name="rate" value="1 Star">
+        <label for="1 Star">1 Star</label>
+        <input type="radio" id="2 Stars" name="rate" value="2 Stars">
+        <label for="2 Stars">2 Stars</label>
+        <input type="radio" id="3 Stars" name="rate" value="3 Stars">
+        <label for="3 Stars">3 Stars</label>
+        <input type="radio" id="4 Stars" name="rate" value="4 Stars">
+        <label for="4 Stars">4 Stars</label>
+        <input type="radio" id="5 Stars" name="rate" value="5 Stars">
+        <label for="5 Stars">5 Stars</label>
+      </div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+</main>
+</body>
+</html>
