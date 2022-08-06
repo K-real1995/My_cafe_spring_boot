@@ -55,6 +55,6 @@ body {
     width: 70px;
 }
 .right-li{
-    display: block;
-    text-align: right;
+    position: fixed;
+    right: 0;
 }
